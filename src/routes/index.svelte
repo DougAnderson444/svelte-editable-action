@@ -72,10 +72,10 @@
 			U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 	}
 
-	.fatboy {
+	/* .fatboy {
 		font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
 			Helvetica Neue, Arial, Noto Sans, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
 			Segoe UI Symbol, 'Noto Color Emoji';
 		line-height: 1;
-	}
+	} */
 </style>
