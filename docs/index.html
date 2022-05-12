@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="/svelte-editable-action/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta http-equiv="content-security-policy" content="">
+	<link rel="stylesheet" href="/svelte-editable-action/_app/assets/pages/__layout.svelte-3aafe3dc.css">
+	<link rel="stylesheet" href="/svelte-editable-action/_app/assets/pages/index.svelte-aaf577d5.css">
+	<link rel="modulepreload" href="/svelte-editable-action/_app/start-4f834a58.js">
+	<link rel="modulepreload" href="/svelte-editable-action/_app/chunks/index-0aa0f850.js">
+	<link rel="modulepreload" href="/svelte-editable-action/_app/chunks/index-279c23e1.js">
+	<link rel="modulepreload" href="/svelte-editable-action/_app/pages/__layout.svelte-7d4755c5.js">
+	<link rel="modulepreload" href="/svelte-editable-action/_app/pages/index.svelte-de65e950.js">
+	</head>
+	<body>
+		<div>
+
+
+<main class="svelte-1izrdc8"><div><h1 class="svelte-xje7yh">Svelte Text Editor Usage &amp; Guide</h1>
+	Click 🖱️ on me to
+	<i>edit this</i> <b>text</b> by
+	<a href="https://twitter.com/DougAnderson444" target="_blank">@DougAnderson444</a>
+
+	<input type="text" placeholder="Clicking an input does not affect editing" class="svelte-xje7yh" style="width: 20em;">
+
+	<div style="display: block;"><h2 class="lucky svelte-xje7yh">click me:</h2>
+		Custom Fonts are editable too!
+	</div>
+	<p>Just add the css in your svelte style section as usual</p>
+
+	<li style="color: #000000;">But</li><li style="color: #e60000;">I</li><li style="color: #ff9900;">want</li><li style="color: #ffff00;">custom</li><li style="color: #008a00;">colors!</li>
+
+	<p>That&#39;s ok, just add your own colors or import it from the module</p>
+	<pre>        
+        import { colors } from &quot;@douganderson444/svelte-editable-action&quot;
+        
+    </pre>
+
+	<p><b>Note:</b>
+		<br>
+		<i>You can use the same color for multiple elements, just add the same color to the array
+			multiple times
+		</i></p>
+</div></main>
+
+<footer class="svelte-1izrdc8"><p>visit <a href="https://https://github.com/DougAnderson444/svelte-editable-action" class="svelte-1izrdc8">github.com/DougAnderson444/svelte-editable-action</a> to learn more
+	</p>
+</footer>
+
+
+		<script type="module" data-hydrate="1fks01a">
+		import { start } from "/svelte-editable-action/_app/start-4f834a58.js";
+		start({
+			target: document.querySelector('[data-hydrate="1fks01a"]').parentNode,
+			paths: {"base":"/svelte-editable-action","assets":"/svelte-editable-action"},
+			session: {},
+			route: true,
+			spa: false,
+			trailing_slash: "never",
+			hydrate: {
+				status: 200,
+				error: null,
+				nodes: [
+					import("/svelte-editable-action/_app/pages/__layout.svelte-7d4755c5.js"),
+						import("/svelte-editable-action/_app/pages/index.svelte-de65e950.js")
+				],
+				params: {},
+				routeId: ""
+			}
+		});
+	</script></div>
+	</body>
+</html>
