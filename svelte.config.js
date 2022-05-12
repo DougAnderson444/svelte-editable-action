@@ -12,10 +12,13 @@ const config = {
 
     kit: {
         adapter: adapter({
-            pages: "docs",
+            fallback: "index.html", // makes us an index.html file
+            pages: "docs", // puts our build in the docs folder for github pages
             assets: "docs",
         }),
-        prerender: { default: true },
+        prerender: {
+            default: true,
+        },
         paths: {
             // change below to your repo name
             base:
