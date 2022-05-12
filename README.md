@@ -4,6 +4,12 @@ A svelte [action](https://svelte.dev/docs#template-syntax-element-directives-use
 
 Make any HTML element and children editable, complete with a toolbar compliments of [nenadpnc/cl-editor](https://github.com/nenadpnc/cl-editor) under the hood.
 
+## Svelte, with _style_
+
+Build a component to _set_ the style.
+
+Use this action to edit the _content_ without messing with the styling.
+
 ## Use
 
 Basic usage:

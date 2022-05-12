@@ -4,8 +4,6 @@ import adapter from "@sveltejs/adapter-static"
 import preprocess from "svelte-preprocess"
 import path from "path"
 
-const pkgName = "svelte-editable-action"
-
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
     // Consult https://github.com/sveltejs/svelte-preprocess
