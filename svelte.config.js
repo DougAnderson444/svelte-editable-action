@@ -1,6 +1,4 @@
-// import adapter from "@sveltejs/adapter-auto"
 import adapter from "@sveltejs/adapter-static"
-
 import preprocess from "svelte-preprocess"
 import path from "path"
 
@@ -12,12 +10,14 @@ const config = {
 
     kit: {
         adapter: adapter({
-            fallback: "index.html", // makes us an index.html file
+            // fallback: "index.html", // makes us an index.html file
             pages: "docs", // puts our build in the docs folder for github pages
             assets: "docs",
+            // trailingSlash: "always",
         }),
         prerender: {
-            default: true,
+            // default: true,
+            // enabled: true,
         },
         paths: {
             // change below to your repo name
