@@ -1,3 +1,3 @@
-export { editable as default } from './editable';
-export { editable as editable } from './editable';
-export { colors as colors } from './colors';
+export { editable as default } from './editable.js';
+export { editable as editable } from './editable.js';
+export { colors as colors } from './colors.js';
