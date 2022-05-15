@@ -1,4 +1,4 @@
-import Editor from 'cl-editor/src/Editor.svelte';
+import Editor from '@douganderson444/svelte-html-editor/Editor.svelte';
 
 let inlineEditor;
 
