@@ -1,12 +1,12 @@
 import Editor from 'cl-editor/src/Editor.svelte';
 
-let inlineEditor: Editor;
+let inlineEditor;
 
-export function editable(node: HTMLElement, params) {
+export function editable(node, params) {
 	// the node has been mounted in the DOM
 	node.addEventListener('click', showEditor);
 
-	function showEditor(event: MouseEvent) {
+	function showEditor(event) {
 		// 			if(event.target !== node &&
 		// 				event.target.parentNode !== node ) return
 		if (event.target instanceof HTMLInputElement || event.target.isContentEditable) return;
