@@ -2008,4 +2008,4 @@ class Routes extends SvelteComponent {
   }
 }
 export { Routes as default, prerender };
-//# sourceMappingURL=index.svelte-de65e950.js.map
+//# sourceMappingURL=index.svelte-50ef987f.js.map
