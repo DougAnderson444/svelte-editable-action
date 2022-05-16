@@ -774,7 +774,7 @@ const matchers = {};
 const components = [
   () => __vitePreload(() => import("./pages/__layout.svelte-7d4755c5.js"), true ? ["pages/__layout.svelte-7d4755c5.js","assets/pages/__layout.svelte-3aafe3dc.css","chunks/index-0aa0f850.js"] : void 0),
   () => __vitePreload(() => import("./error.svelte-48c188b3.js"), true ? ["error.svelte-48c188b3.js","chunks/index-0aa0f850.js"] : void 0),
-  () => __vitePreload(() => import("./pages/index.svelte-50ef987f.js"), true ? ["pages/index.svelte-50ef987f.js","assets/pages/index.svelte-aaf577d5.css","chunks/index-0aa0f850.js","chunks/index-279c23e1.js"] : void 0)
+  () => __vitePreload(() => import("./pages/index.svelte-4afade8d.js"), true ? ["pages/index.svelte-4afade8d.js","assets/pages/index.svelte-2cf9c5a2.css","chunks/index-0aa0f850.js","chunks/index-279c23e1.js"] : void 0)
 ];
 const dictionary = {
   "": [[0, 2], [1]]
@@ -901,7 +901,7 @@ function notifiable_store(value) {
 }
 function create_updated_store() {
   const { set, subscribe } = writable(false);
-  const initial = "1652629307305";
+  const initial = "1652738022619";
   let timeout;
   async function check() {
     clearTimeout(timeout);
@@ -1167,7 +1167,7 @@ function create_client({ target, session, base: base2, trailing_slash }) {
         const tabindex = root2.getAttribute("tabindex");
         (_c = getSelection()) == null ? void 0 : _c.removeAllRanges();
         root2.tabIndex = -1;
-        root2.focus();
+        root2.focus({ preventScroll: true });
         if (tabindex !== null) {
           root2.setAttribute("tabindex", tabindex);
         } else {
@@ -1377,7 +1377,8 @@ function create_client({ target, session, base: base2, trailing_slash }) {
     let stuff_changed = false;
     let status = 200;
     let error = null;
-    a.forEach((loader) => loader());
+    a.forEach((loader) => loader().catch(() => {
+    }));
     load:
       for (let i = 0; i < a.length; i += 1) {
         let node;
@@ -1844,4 +1845,4 @@ async function start({ paths, target, session, route, spa, trailing_slash, hydra
   dispatchEvent(new CustomEvent("sveltekit:start"));
 }
 export { start };
-//# sourceMappingURL=start-866d9990.js.map
+//# sourceMappingURL=start-647bdbc6.js.map
