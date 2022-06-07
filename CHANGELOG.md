@@ -1,6 +1,8 @@
 # default-template
 
-## 0.0.2-next.0
+## 0.0.6
+
+Added emit change event on edit blur
 
 ### Patch Changes
 

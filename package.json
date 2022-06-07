@@ -1,6 +1,6 @@
 {
 	"name": "@douganderson444/svelte-editable-action",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"module": "src/lib/index.js",
 	"scripts": {
 		"dev": "svelte-kit dev --port 3003",
