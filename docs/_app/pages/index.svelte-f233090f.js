@@ -1650,6 +1650,9 @@ function editable(node, params) {
       inlineEditor.$destroy();
       node.innerHTML = html;
       node.addEventListener("click", showEditor);
+      node.dispatchEvent(new CustomEvent("change", {
+        detail: html
+      }));
     });
   }
   return {
@@ -2007,4 +2010,4 @@ class Routes extends SvelteComponent {
   }
 }
 export { Routes as default, prerender };
-//# sourceMappingURL=index.svelte-4afade8d.js.map
+//# sourceMappingURL=index.svelte-f233090f.js.map
