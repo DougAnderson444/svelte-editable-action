@@ -67,6 +67,12 @@ export function editable(node, params) {
 			inlineEditor.$destroy();
 			node.innerHTML = html;
 			node.addEventListener('click', showEditor);
+
+			node.dispatchEvent(
+				new CustomEvent('change', {
+					detail: html
+				})
+			);
 		});
 	}
 

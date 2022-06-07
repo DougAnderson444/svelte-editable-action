@@ -4,7 +4,7 @@ A svelte [action](https://svelte.dev/docs#template-syntax-element-directives-use
 
 Make any HTML element and children editable, complete with a toolbar compliments of [nenadpnc/cl-editor](https://github.com/nenadpnc/cl-editor) under the hood.
 
-## Svelte, with _style_
+## Edit Svelte html output, with _style_
 
 Build a component to _set_ the style.
 
@@ -18,11 +18,14 @@ Basic usage:
 // index.svelte
 <script>
     import { editable } from "@douganderson444/svelte-editable-action"
+	let editText
 </script>
 
-<div use:editable>
+<div use:editable on:change={(e) => editText = e.detail } >
     Click to edit me using the popup toolbar
 </div>
+
+The text is now: {editText}
 ```
 
 Advanced use: (see ./src/routes/index.svelte)
